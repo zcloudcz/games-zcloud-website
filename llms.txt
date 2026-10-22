@@ -3,8 +3,8 @@
 
 ## Hry
 - [BeatCastle](https://games.zcloud.cz/beatcastle/): Připravovaná offline fantasy akce pro Android, bez registrace.
-- [Pizza Piazza](https://games.zcloud.cz/pizzapiazza/): 3D hra o budování pizzerie pro prohlížeč a mobil (PWA), 9 poboček. Ve vývoji.
-- [Burger Rush](https://games.zcloud.cz/burgerrush/): 3D hra o burgerové restauraci pro prohlížeč a mobil (PWA), 9 poboček. Ve vývoji.
+- [Pizza Piazza](https://games.zcloud.cz/pizzapiazza/): 3D hra o budování pizzerie pro prohlížeč a mobil (PWA), 9 poboček. [Hrát zdarma](https://games.zcloud.cz/pizzapiazza/play/). Hratelná verze ve vývoji.
+- [Burger Rush](https://games.zcloud.cz/burgerrush/): 3D hra o burgerové restauraci pro prohlížeč a mobil (PWA), 9 poboček. [Hrát zdarma](https://games.zcloud.cz/burgerrush/play/). Hratelná verze ve vývoji.
 - [Thief](https://games.zcloud.cz/thief/): Offline loupežnická adventura v češtině, Londýn kolem roku 1970. Prototyp pro Windows; Android a iOS jsou plánované.
 
 ## Kontakt a soukromí

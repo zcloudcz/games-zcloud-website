@@ -47,3 +47,27 @@ test('game pages do not invent download destinations', () => {
     assert.doesNotMatch(read(path.slice(1) + 'index.html'), /href="(?:#|https:\/\/(?:play\.google\.com|apps\.apple\.com)\/?)["]/);
   }
 });
+
+for (const slug of ['pizzapiazza', 'burgerrush']) {
+  test(`${slug} can be launched with complete, independently scoped offline assets`, () => {
+    const landing = read(`${slug}/index.html`);
+    assert.match(landing, new RegExp(`href="/${slug}/play/"[^>]*>Hrát`));
+    const html = read(`${slug}/play/index.html`);
+    assert.match(html, /<div id="app"><\/div>/);
+    assert.match(html, /type="module"/);
+    for (const [, resource] of html.matchAll(/(?:href|src)="(\.\/[^"?]+)"/g)) {
+      assert.ok(existsSync(resolve(root, slug, 'play', resource)), `Missing game asset: ${resource}`);
+    }
+    const manifest = JSON.parse(read(`${slug}/play/manifest.webmanifest`));
+    assert.equal(manifest.start_url, './');
+    assert.equal(manifest.scope, './');
+    for (const icon of manifest.icons) assert.ok(existsSync(resolve(root, slug, 'play', icon.src)));
+    const worker = read(`${slug}/play/sw.js`);
+    const files = JSON.parse(worker.match(/const FILES=(\[[^;]+\]);/)[1]);
+    for (const file of files) {
+      assert.ok(file.startsWith('./') && !file.includes('..'), `Cache escapes its game directory: ${file}`);
+      assert.ok(existsSync(resolve(root, slug, 'play', file)), `Missing offline asset: ${file}`);
+    }
+    assert.match(read('llms.txt'), new RegExp(`https://games.zcloud.cz/${slug}/play/`));
+  });
+}
