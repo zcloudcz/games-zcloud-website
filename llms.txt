@@ -1,0 +1,13 @@
+# zcloud games
+> Hry od Martina Zahálky (zcloud). Oficiální prezentace her a informace o jejich vývoji.
+
+## Hry
+- [BeatCastle](https://games.zcloud.cz/beatcastle/): Připravovaná offline fantasy akce pro Android, bez registrace.
+- [Pizza Piazza](https://games.zcloud.cz/pizzapiazza/): 3D hra o budování pizzerie pro prohlížeč a mobil (PWA), 9 poboček. Ve vývoji.
+- [Burger Rush](https://games.zcloud.cz/burgerrush/): 3D hra o burgerové restauraci pro prohlížeč a mobil (PWA), 9 poboček. Ve vývoji.
+- [Thief](https://games.zcloud.cz/thief/): Offline loupežnická adventura v češtině, Londýn kolem roku 1970. Prototyp pro Windows; Android a iOS jsou plánované.
+
+## Kontakt a soukromí
+- [Martin Zahálka](https://zcloud.cz/): Autor her, IČO 07783809, info@zcloud.cz.
+- [Soukromí BeatCastle](https://games.zcloud.cz/beatcastle/privacy/): Pravidla v češtině a angličtině.
+

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://games.zcloud.cz/</loc></url>
-  <url><loc>https://games.zcloud.cz/beatcastle/</loc></url>
-  <url><loc>https://games.zcloud.cz/beatcastle/privacy/</loc></url>
+  <url><loc>https://games.zcloud.cz/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://games.zcloud.cz/beatcastle/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://games.zcloud.cz/pizzapiazza/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://games.zcloud.cz/burgerrush/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://games.zcloud.cz/thief/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://games.zcloud.cz/beatcastle/privacy/</loc><lastmod>2026-10-22</lastmod></url>
 </urlset>
